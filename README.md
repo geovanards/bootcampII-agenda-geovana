@@ -1,5 +1,6 @@
 # 💜 Bootcamp II Agenda Simples
 ## Agenda Simples
+Acesse para saber como utlizar o modo desenvolvedor: https://geovanards.github.io/bootcampII-agenda-geovana/
 
 Extensão para Google Chrome que permite criar anotações ilimitadas e salvá-las localmente para consulta posterior. Ideal para organizar ideias e lembretes rápidos.
 
