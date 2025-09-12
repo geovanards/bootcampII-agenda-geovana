@@ -1,4 +1,4 @@
-# Bootcamp II Agenda Simples
+# 💜 Bootcamp II Agenda Simples
 ## Agenda Simples
 
 Extensão para Google Chrome que permite criar anotações ilimitadas e salvá-las localmente para consulta posterior. Ideal para organizar ideias e lembretes rápidos.
@@ -10,9 +10,10 @@ Extensão para Google Chrome que permite criar anotações ilimitadas e salvá-l
 - Salvar dados localmente usando o armazenamento do Chrome (chrome.storage).
 
 ## Tela Principal
+<div align="center">
+<img width="471" height="306" alt="image" src="https://github.com/user-attachments/assets/a4aabac6-14d2-44d6-ace0-51a8af2359f5" />
+</div>
 
-![Tela da Agenda Simples](./docs/imagem_tela.png)  
-*Substitua "imagem_tela.png" pela captura de tela da extensão.*
 
 ## Instalação (Modo Desenvolvedor)
 
