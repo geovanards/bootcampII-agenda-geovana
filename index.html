@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação da Extensão</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de cores e fontes */
+        :root {
+            --primary-color: #00004d; /* Azul marinho escuro */
+            --secondary-color: #ffffff; /* Branco */
+            --accent-color: #008cba; /* Azul vibrante */
+        }
+
+        /* --- Estilos Gerais --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #000033, #00004d, #000066); /* Degradê azul marinho */
+            color: var(--secondary-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente */
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        /* --- Seções do Conteúdo --- */
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* --- Lista de Instalação --- */
+        ol {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            counter-reset: installation-step;
+        }
+
+        ol li {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px 20px 15px 50px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            position: relative;
+            font-size: 1em;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        ol li::before {
+            counter-increment: installation-step;
+            content: counter(installation-step);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        code {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            color: #b3c2e6;
+        }
+
+        /* --- Botão de Download --- */
+        .btn-download {
+            display: inline-block;
+            background: linear-gradient(45deg, #008cba, #005f7e);
+            color: var(--secondary-color);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0, 140, 186, 0.4);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 140, 186, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="installation-section">
+            <div class="container">
+                <h2>Instalação Manual</h2>
+                <p>Para instalar a extensão em seu navegador, siga estes passos simples:</p>
+                <ol>
+                    <li><strong>Clone ou baixe</strong> este repositório do GitHub em seu computador. Você pode fazer isso clicando em **Code** e depois em **Download ZIP**.</li>
+                    <li>No Google Chrome, acesse <code>chrome://extensions/</code>.</li>
+                    <li>Ative o **Modo de desenvolvedor** no canto superior direito.</li>
+                    <li>Clique em **Carregar sem compactação** (ou *Load unpacked* em inglês) e selecione a pasta do projeto.</li>
+                    <li>A extensão aparecerá na barra de ferramentas do Chrome.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="download-section">
+            <div class="container">
+                <h2>Download</h2>
+                <a href="https://github.com/geovanards/bootcampII-agenda-geovana/releases/download/v1.0.0/bootcampII-geovana-agenda.zip" class="btn-download" download>
+                    Download da Extensão (.zip)
+                </a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
