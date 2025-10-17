@@ -1,4 +1,4 @@
-# 💜 Bootcamp II Agenda Simples
+# 💜 Chrome extensão II Agenda Simples
 ## Agenda Simples
 Acesse para saber como utlizar o modo desenvolvedor: https://geovanards.github.io/bootcampII-agenda-geovana/
 
